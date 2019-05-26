@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#103a48</color>
+    <color name="colorPrimaryDark">#103a48</color>
+    <color name="colorAccent">#39746b</color>
+    <color name="colorHardBlue">#21443F</color>
+    <color name="colorAlmostWhite">#C5EDEF</color>
+    <color name="colorMediumBlue">#38746a</color>
+    <color name="colorTextBox">#97b6b1</color>
+    <color name="colorOpp">#b17b1d</color>
+
+
+</resources>

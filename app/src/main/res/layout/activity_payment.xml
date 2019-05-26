@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:gravity="center">
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quase lá!"
+            android:textColor="@color/colorAlmostWhite"
+            android:textSize="35dp"
+            android:maxLines="1"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            />
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAlmostWhite"
+            android:textSize="20dp"
+            android:maxLines="3"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:text="Agora só falta pagar o boleto. Quando a transação for concluída, notificaremos o trabalhador!"/>
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAlmostWhite"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:text="Caso ocorra qualquer erro, o seu dinheiro será devolvido."/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/AP_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:hint="Gerar Boleto"
+        android:background="@color/colorMediumBlue"
+        android:textColorHint="@color/colorAlmostWhite"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:fontFamily="segouii"
+        />
+</RelativeLayout>

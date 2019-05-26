@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.freejob.freejob.Activities.MainActivity"
+    android:background="@drawable/bg_gradient">
+
+    <FrameLayout
+        android:id="@+id/AM_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/AM_MainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:paddingBottom="50dp">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="300dp"
+               android:scaleType="centerInside"
+
+               android:src="@drawable/freejob"
+
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="vertical">
+
+               <android.support.design.button.MaterialButton
+                   android:id="@+id/AM_phone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="5dp"
+                   android:padding="10dp"
+                   android:visibility="gone"
+                   app:icon="@drawable/ic_phone"
+                   app:iconGravity="start"
+                   style="@style/Widget.MaterialComponents.Button.Icon"
+                   app:backgroundTint="@color/colorAccent"
+                   app:rippleColor="@color/colorAlmostWhite"
+                   app:cornerRadius="20dp"
+                   android:hint="@string/phone_login"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                   android:textColorHint="#FFF" />
+                <android.support.design.button.MaterialButton
+                       android:id="@+id/AM_facebook"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginBottom="5dp"
+                       android:textColorHint="#FFF"
+                       app:icon="@drawable/ic_facebook"
+                       app:iconGravity="start"
+                       app:iconSize="24dp"
+                       android:hint="FACEBOOK"
+                       app:rippleColor="@color/colorAlmostWhite"
+                       app:cornerRadius="20dp"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                       android:padding="10dp"
+                       app:backgroundTint="#3c5a99"
+                       android:visibility="gone"
+                       style="@style/Widget.MaterialComponents.Button.Icon" />
+                <android.support.design.button.MaterialButton
+                       android:id="@+id/AM_google"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginBottom="5dp"
+                       android:textColorHint="#FFF"
+                       app:icon="@drawable/ic_google"
+                       app:iconGravity="start"
+                       app:iconSize="24dp"
+                       android:hint="GOOGLE"
+                       app:rippleColor="@color/colorAlmostWhite"
+                       app:cornerRadius="20dp"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                       android:padding="10dp"
+                       app:backgroundTint="#ea4335"
+                       style="@style/Widget.MaterialComponents.Button.Icon"
+                       android:visibility="gone"/>
+           </LinearLayout>
+       </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ao clicar em 'Já tenho uma conta' ou 'Quero me cadastrar' você concorda com os Termos de Serviço, Termos de confidencialidade e Termos de privacidade do aplicativo 'FreeJob'."
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>

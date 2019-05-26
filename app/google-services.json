@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "43396180418",
+    "firebase_url": "https://freejob-de049.firebaseio.com",
+    "project_id": "freejob-de049",
+    "storage_bucket": "freejob-de049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43396180418:android:29bde3d4f9309149",
+        "android_client_info": {
+          "package_name": "com.freejob.freejob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43396180418-c918afbue2kojsn5qqg6dqfr1hqnjlbs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freejob.freejob",
+            "certificate_hash": "3e9e545c0ad71e7177abd661640cae1dabf2ddd3"
+          }
+        },
+        {
+          "client_id": "43396180418-up1bmvpsg4pqcfb9fqcn0565ftcs8465.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC0Efe2pC_PhSn_WppGFJLctg8sRsVNhU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43396180418-up1bmvpsg4pqcfb9fqcn0565ftcs8465.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

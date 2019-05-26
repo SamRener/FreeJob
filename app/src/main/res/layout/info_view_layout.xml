@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="6dp"
+    >
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        >
+        <ImageView
+            android:id="@+id/IV_image"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="70dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7.5"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/IV_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uraltulgo Noi Nueph"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:lines="1"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginStart="5dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/IV_work_type"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:gravity="center"
+                android:textColor="#696969"
+                android:text="Técnico em Informática"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/IV_rating"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000"
+                android:fontFamily="@font/segoeuib"
+                android:text="4.0"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>

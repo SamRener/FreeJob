@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/AW_mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_grey"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <android.support.v7.widget.CardView
+        android:id="@+id/AW_CV_Map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/AW_CL_Map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/AW_RL_Map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <fragment
+                    android:id="@+id/AW_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.freejob.freejob.Activities.WorkerActivity" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp">
+
+                    <android.support.design.button.MaterialButton
+                        android:id="@+id/AW_loca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        style="@style/Widget.MaterialComponents.Button.Icon"
+                        android:hint="GPS"
+                        android:textColorHint="@color/colorAlmostWhite"
+                        app:strokeColor="@color/colorAlmostWhite"
+                        app:strokeWidth="1dp"
+                        app:icon="@drawable/ic_location_24"
+                        app:iconTint="@color/colorAlmostWhite"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        app:rippleColor="@color/colorAlmostWhite"
+                        android:layout_alignParentEnd="true"
+                        app:cornerRadius="100dp"
+                        />
+                </RelativeLayout>
+                <android.support.design.button.MaterialButton
+                    android:id="@+id/AW_open_sidebar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="12dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    app:rippleColor="@color/colorAlmostWhite"
+                    app:iconTint="@color/colorAlmostWhite"
+                    app:icon="@drawable/ic_menu"
+                    app:strokeWidth="0dp"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="@color/colorAlmostWhite"
+                    />
+
+
+            </RelativeLayout>
+            <include layout="@layout/fj_wait_bsb"/>
+        </android.support.design.widget.CoordinatorLayout>
+    </android.support.v7.widget.CardView>
+    <FrameLayout
+        android:id="@+id/AW_FJ_layout"
+        android:layout_weight="1.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

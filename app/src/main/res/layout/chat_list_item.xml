@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_margin="5dp"
+        >
+<ImageView
+    android:id="@+id/CLT_profile"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:src="@drawable/freejob"
+    android:scaleType="fitCenter"
+    android:background="@drawable/rounded_profile"
+    android:elevation="3dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5">
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/CLT_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Samuel Rener Santos Silva"
+                android:fontFamily="@font/segoe"
+                android:textColor="#C5EDEF"
+                android:textSize="17sp"/>
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:gravity="center">
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/CLT_lastMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorAlmostWhite"
+                    android:text="Última Mensagem"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/segoeui"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/CLT_LM_timestamp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="21 de Janeiro de 2018"
+                    android:fontFamily="@font/segoeuii"
+                    android:textColor="@color/colorAlmostWhite"
+                    android:textSize="12sp"/>
+                <ImageView
+                    android:id="@+id/CLT_newMarker"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_new"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

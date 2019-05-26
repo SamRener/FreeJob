@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:text="OK, Mãos a Obra!"
+            android:textSize="17sp"
+            android:textColor="@color/colorAccent"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:text="DURAÇÃO:"
+            android:textSize="35sp"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent"
+            />
+            <Chronometer
+                android:id="@+id/IPB_Chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:fontFamily="@font/segoeui"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+        <android.support.design.button.MaterialButton
+            android:id="@+id/IPB_FinishJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="FINALIZAR TRABALHO"
+            android:layout_margin="5dp"
+            app:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

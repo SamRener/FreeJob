@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:id="@+id/MSI_layout"
+    android:layout_gravity="right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/message">
+    <TextView
+
+        android:id="@+id/MSI_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto da messagem"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/MSI_timestamp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="12 de Janeiro de 2018"
+        android:textSize="12sp"
+        android:textColor="#FFF"
+        android:paddingHorizontal="5dp"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
+</LinearLayout>

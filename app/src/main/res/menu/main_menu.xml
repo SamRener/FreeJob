@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/MM_home"
+    android:icon="@drawable/ic_home"
+    android:title="Home"
+    />
+    <!-- <item
+      android:id="@+id/MM_services"
+      android:title="Serviços"
+      android:icon="@drawable/ic_assignment"
+      />
+  <item
+      android:id="@+id/MM_contacts"
+      android:title="Contatos"
+      android:icon="@drawable/ic_contact"
+      />
+  <item
+      android:id="@+id/MM_schedule"
+      android:title="Agenda"
+      android:icon="@drawable/ic_schedule"
+      />
+    <item
+        android:id="@+id/MM_config"
+        android:title="Configurações"
+        android:icon="@drawable/ic_settings"
+        />
+        -->
+    <item
+        android:id="@+id/MM_exit"
+        android:title="Sair"
+        android:icon="@drawable/ic_clear"
+        />
+    <item
+        android:id="@+id/MM_apagar"
+        android:title="Apagar Dados"
+        android:icon="@drawable/ic_backspace"
+        />
+
+</menu>
